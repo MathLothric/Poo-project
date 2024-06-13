@@ -4,11 +4,13 @@ import java.util.ArrayList;
 public class Instrutor extends Pessoa {
     
     private String especialidade;
+    protected static int contadorInstrutor = 0;
     private ArrayList<String> horarios;
     
     public Instrutor(String nome, int idade, String cpf, String telefone, String especialidade){
         super(nome, idade, cpf, telefone);
         this.especialidade = especialidade;
+        contadorInstrutor ++;
         horarios = new ArrayList<>();
         }
 
